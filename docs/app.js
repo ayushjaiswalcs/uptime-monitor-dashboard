@@ -11,7 +11,7 @@
  */
 
 // <<< PASTE YOUR status.json RAW URL HERE >>>
-const STATUS_URL = 'https://raw.githubusercontent.com/USER/REPO/main/status.json';
+const STATUS_URL = 'https://raw.githubusercontent.com/ayushjaiswalcs/uptime-monitor-dashboard/main/status.json';
 
 const REFRESH_INTERVAL_MS = 30_000;   // 30 seconds
 
