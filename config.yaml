@@ -1,0 +1,13 @@
+# Per-request HTTP timeout (seconds)
+timeout_seconds: 10
+
+# Consecutive failed RUNS before declaring DOWN (avoids false alarms).
+# With a 5-minute cron, 2 means ~10 minutes before a DOWN alert fires.
+failures_before_alert: 2
+
+endpoints:
+  - name: Google (test - healthy)
+    url: https://google.com
+
+  - name: Error Test (test - always down)
+    url: https://httpstat.us/500

@@ -1,0 +1,11 @@
+# Secret — never commit
+.env
+
+# NOTE: state.json and status.json ARE committed on purpose — they persist
+# status across ephemeral Actions runs and feed the dashboard. Do not ignore.
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
