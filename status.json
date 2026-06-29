@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "name": "Google (test - healthy)",
+    "url": "https://google.com",
+    "status": "UP",
+    "http_code": 200,
+    "response_ms": 1354.8,
+    "last_checked": "2026-06-29T10:20:04.351608+00:00",
+    "since": "2026-06-29T10:19:52.235131+00:00"
+  },
+  {
+    "name": "Error Test (test - always down)",
+    "url": "https://httpstat.us/500",
+    "status": "DOWN",
+    "http_code": null,
+    "response_ms": null,
+    "last_checked": "2026-06-29T10:20:04.351608+00:00",
+    "since": "2026-06-29T10:20:04.351608+00:00"
+  }
+]
