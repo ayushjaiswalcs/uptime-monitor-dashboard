@@ -1,0 +1,55 @@
+name: Uptime Monitor
+
+on:
+  schedule:
+    # Every 5 minutes. GitHub cron is best-effort; under load it may run later.
+    - cron: "*/5 * * * *"
+  workflow_dispatch:   # lets you run it manually from the Actions tab
+
+# Least privilege: the job only needs to push the updated state/status files.
+permissions:
+  contents: write
+
+# If a previous run is still going, don't pile up; let it finish.
+concurrency:
+  group: uptime-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run one check cycle
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python monitor.py
+
+      - name: Print public status.json URL
+        run: |
+          echo "Public status feed (paste this into docs/app.js):"
+          echo "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/status.json"
+
+      - name: Commit & push updated state
+        run: |
+          git config user.name  "uptime-bot"
+          git config user.email "uptime-bot@users.noreply.github.com"
+          git add state.json status.json
+          # Commit only if something actually changed — otherwise exit cleanly.
+          if git diff --staged --quiet; then
+            echo "No status change — nothing to commit."
+          else
+            git commit -m "chore: update uptime status [skip ci]"
+            git push
+          fi
