@@ -4,8 +4,8 @@
     "url": "https://google.com",
     "status": "UP",
     "http_code": 200,
-    "response_ms": 155.1,
-    "last_checked": "2026-06-30T22:43:42.170173+00:00",
+    "response_ms": 153.9,
+    "last_checked": "2026-06-30T23:49:47.972371+00:00",
     "since": "2026-06-29T10:19:52.235131+00:00"
   },
   {
@@ -14,7 +14,7 @@
     "status": "DOWN",
     "http_code": null,
     "response_ms": null,
-    "last_checked": "2026-06-30T22:43:42.170173+00:00",
+    "last_checked": "2026-06-30T23:49:47.972371+00:00",
     "since": "2026-06-29T10:20:04.351608+00:00"
   }
 ]
