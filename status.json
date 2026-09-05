@@ -4,8 +4,8 @@
     "url": "https://google.com",
     "status": "UP",
     "http_code": 200,
-    "response_ms": 210.7,
-    "last_checked": "2026-09-05T16:45:34.400429+00:00",
+    "response_ms": 232.2,
+    "last_checked": "2026-09-05T18:35:15.799772+00:00",
     "since": "2026-06-29T10:19:52.235131+00:00"
   },
   {
@@ -13,8 +13,8 @@
     "url": "https://httpstat.us/500",
     "status": "DOWN",
     "http_code": 502,
-    "response_ms": 2644.7,
-    "last_checked": "2026-09-05T16:45:34.400429+00:00",
+    "response_ms": 330.1,
+    "last_checked": "2026-09-05T18:35:15.799772+00:00",
     "since": "2026-06-29T10:20:04.351608+00:00"
   }
 ]
