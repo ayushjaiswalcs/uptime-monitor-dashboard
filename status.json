@@ -4,17 +4,17 @@
     "url": "https://google.com",
     "status": "UP",
     "http_code": 200,
-    "response_ms": 176.1,
-    "last_checked": "2026-09-12T00:01:56.204478+00:00",
+    "response_ms": 104.1,
+    "last_checked": "2026-09-12T04:21:43.941764+00:00",
     "since": "2026-06-29T10:19:52.235131+00:00"
   },
   {
     "name": "Error Test (test - always down)",
     "url": "https://httpstat.us/500",
     "status": "DOWN",
-    "http_code": 502,
-    "response_ms": 8773.2,
-    "last_checked": "2026-09-12T00:01:56.204478+00:00",
+    "http_code": null,
+    "response_ms": null,
+    "last_checked": "2026-09-12T04:21:43.941764+00:00",
     "since": "2026-06-29T10:20:04.351608+00:00"
   }
 ]
