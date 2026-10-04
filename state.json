@@ -5,16 +5,16 @@
     "down_since": null,
     "status_since": "2026-06-29T10:19:52.235131+00:00",
     "last_http_code": 200,
-    "last_response_ms": 221.0,
-    "last_checked": "2026-10-04T00:39:07.252116+00:00"
+    "last_response_ms": 196.7,
+    "last_checked": "2026-10-04T06:18:46.005524+00:00"
   },
   "https://httpstat.us/500": {
     "status": "down",
-    "consecutive_failures": 1565,
+    "consecutive_failures": 1566,
     "down_since": "2026-06-29T10:20:04.351608+00:00",
     "status_since": "2026-06-29T10:20:04.351608+00:00",
     "last_http_code": 404,
-    "last_response_ms": 10385.7,
-    "last_checked": "2026-10-04T00:39:07.252116+00:00"
+    "last_response_ms": 10383.9,
+    "last_checked": "2026-10-04T06:18:46.005524+00:00"
   }
 }
